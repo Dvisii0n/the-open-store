@@ -2,9 +2,11 @@
   flex-grow: 1;
   display: flex;
 }
+
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   flex-grow: 1;
   padding: 30px;
+  gap: 12px;
 }

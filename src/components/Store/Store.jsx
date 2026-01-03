@@ -8,6 +8,13 @@ function Store() {
   const [productsURL, setProductsURL] = useState(
     "https://dummyjson.com/products",
   );
+
+  function extractCategory() {
+    const urlArr = productsURL.split("/");
+    return urlArr[urlArr.length - 1];
+  }
+
+  const currentCategory = extractCategory();
   const { data, error } = useFetchURL(productsURL);
   const products = data ? data.products : null;
 
@@ -15,7 +22,10 @@ function Store() {
 
   return (
     <div className={StoreStyles.store}>
-      <StoreSidebar />
+      <StoreSidebar
+        setProductsURL={setProductsURL}
+        currentCategory={currentCategory}
+      />
       <div className={StoreStyles.products}>
         {products ? (
           products.map((prodInfo) => (
