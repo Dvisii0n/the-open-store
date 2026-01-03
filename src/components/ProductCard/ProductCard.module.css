@@ -1,16 +1,39 @@
 .productCard {
   max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 8px;
 }
 
 .prodImg {
   max-width: 100%;
   height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title,
+.price {
+  padding-left: 12px;
 }
 
 .title {
   color: green;
+  min-height: 44px;
 }
 
 .price {
   color: red;
+}
+
+.add {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 3px 8px;
 }
