@@ -1,0 +1,16 @@
+.productCard {
+  max-width: 200px;
+}
+
+.prodImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  color: green;
+}
+
+.price {
+  color: red;
+}
