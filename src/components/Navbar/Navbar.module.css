@@ -3,7 +3,8 @@
   padding: 10px;
   font-family: var(--default-font);
   display: flex;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: -1px -128px 65px -124px rgba(0, 0, 0, 0.1) inset;
 }

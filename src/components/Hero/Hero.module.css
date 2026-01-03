@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
   min-height: 400px;
+  background-image: url(/castle.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .heroText {
   display: flex;
   flex-direction: column;
+  color: white;
 }
