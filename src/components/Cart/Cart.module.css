@@ -1,3 +1,10 @@
-.cart {
+.cart,
+.empty {
   flex-grow: 1;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
