@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  gap: 10px;
+  padding: 0px 12px;
+  max-width: 400px;
+}
+
+.imgContainer {
+  height: auto;
+  max-width: 100px;
+}
+
+.thumbnail {
+  max-width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.price {
+  color: red;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.remove {
+  max-width: 100px;
+}
