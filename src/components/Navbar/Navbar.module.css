@@ -8,3 +8,27 @@
   flex-wrap: wrap;
   box-shadow: -1px -128px 65px -124px rgba(0, 0, 0, 0.1) inset;
 }
+
+.store,
+.cart {
+  transition: all 200ms ease-out;
+  font-size: 18px;
+}
+
+.cartWrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.count {
+  color: white;
+  background-color: green;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  font-size: 13px;
+}
+
+a:hover {
+  color: green;
+}
