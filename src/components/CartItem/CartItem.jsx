@@ -15,7 +15,11 @@ function CartItem({ itemInfo }) {
   function updateCartQuantity(newQuantity) {
     setCartItems({
       ...cartItems,
-      [itemInfo.id]: { ...cartItems[itemInfo.id], quantity: newQuantity },
+      [itemInfo.id]: {
+        ...cartItems[itemInfo.id],
+        quantity: newQuantity,
+        total: itemInfo.price * newQuantity,
+      },
     });
   }
 
@@ -44,7 +48,7 @@ function CartItem({ itemInfo }) {
         />
 
         <button className={CartItemStyles.remove} onClick={removeItem}>
-          Remove item
+          Remove
         </button>
       </div>
     </div>
