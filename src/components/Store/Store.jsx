@@ -8,7 +8,6 @@ function Store() {
   const [productsURL, setProductsURL] = useState(
     "https://dummyjson.com/products",
   );
-
   function extractCategory() {
     const urlArr = productsURL.split("/");
     return urlArr[urlArr.length - 1];
@@ -32,7 +31,7 @@ function Store() {
             <ProductCard key={prodInfo.id} productInfo={prodInfo} />
           ))
         ) : (
-          <p>Loading products...</p>
+          <p className={StoreStyles.loading}>Loading products...</p>
         )}
       </div>
     </div>
