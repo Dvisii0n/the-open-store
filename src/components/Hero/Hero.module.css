@@ -1,11 +1,21 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    background-color: white;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 400px;
-  background-image: url(/castle.png);
-  background-position: center;
-  background-size: cover;
+  gap: 25px;
+  justify-content: center;
+  background-color: green;
+  min-height: 300px;
+  animation: slideIn 800ms ease;
 }
 
 .heroText {
