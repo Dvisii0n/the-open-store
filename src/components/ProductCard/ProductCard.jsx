@@ -8,9 +8,14 @@ function ProductCard({ productInfo }) {
   const [cartItems, setCartItems] = useOutletContext();
 
   function addToCart(productInfo) {
-    const obj = { quantity: prodQuantity, info: productInfo };
-    setCartItems({ ...cartItems, [productInfo.id]: obj });
+    const itemValue = {
+      quantity: prodQuantity,
+      total: productInfo.price * prodQuantity,
+      info: productInfo,
+    };
+    setCartItems({ ...cartItems, [productInfo.id]: itemValue });
   }
+
   return (
     <div className={ProductCardStyles.productCard}>
       <img
