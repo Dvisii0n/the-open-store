@@ -5,6 +5,22 @@
 
 .cart {
   display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 40px;
+}
+
+.cartList {
+  display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 400px;
+}
+
+.empty {
+  padding: 25px;
+  font-size: 20px;
+  color: gray;
+  justify-self: center;
+  align-self: center;
 }
