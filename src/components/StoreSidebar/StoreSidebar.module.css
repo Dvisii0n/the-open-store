@@ -35,3 +35,7 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.loading {
+  padding: 12px;
+}

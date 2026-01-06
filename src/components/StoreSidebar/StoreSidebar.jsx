@@ -42,7 +42,7 @@ function StoreSidebar({ setProductsURL, currentCategory }) {
           ))}
         </>
       ) : (
-        <p>Loading categories...</p>
+        <p className={StoreSidebarStyles.loading}>Loading categories...</p>
       )}
     </div>
   );
