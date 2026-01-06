@@ -7,3 +7,8 @@ export function getFilteredObject(object, keyToRemove) {
   delete objectCopy[keyToRemove];
   return objectCopy;
 }
+
+export function getItemCount(cartItems) {
+  const arr = Object.values(cartItems);
+  return arr.reduce((sum, val) => sum + val.quantity, 0);
+}
