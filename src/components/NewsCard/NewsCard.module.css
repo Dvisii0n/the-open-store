@@ -1,9 +1,20 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .newsCard {
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   max-width: 350px;
   box-shadow: rgba(73, 104, 126, 0.16) 0px 16px 24px 0px;
+  animation: fadeIn 500ms ease-out;
 }
 
 .imgContainer {
