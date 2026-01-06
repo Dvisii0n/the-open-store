@@ -10,7 +10,8 @@ function QuantityInput({ prodQuantity, setProdQuantity }) {
   }
 
   function onChange(e) {
-    setProdQuantity(parseInt(e.target.value));
+    const val = parseInt(e.target.value);
+    val ? setProdQuantity(val) : setProdQuantity(0);
   }
 
   return (
