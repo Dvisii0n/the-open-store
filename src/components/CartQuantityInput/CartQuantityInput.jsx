@@ -22,8 +22,13 @@ function CartQuantityInput({
 
   function onChange(e) {
     const val = parseInt(e.target.value);
-    setProdQuantity(val);
-    updateCartQuantity(val);
+    if (val) {
+      setProdQuantity(val);
+      updateCartQuantity(val);
+    } else {
+      setProdQuantity(0);
+      updateCartQuantity(0);
+    }
   }
 
   return (
